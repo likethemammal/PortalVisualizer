@@ -30,7 +30,7 @@
 // than Spectro, which requires FFT_N be 64 in that file when compiling.
 
 #include <avr/pgmspace.h>
-#include <ffft.h>
+#include "ffft.h"
 #include <math.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>   // Core graphics library
