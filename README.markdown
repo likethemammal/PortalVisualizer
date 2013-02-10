@@ -4,6 +4,8 @@ This is a visualizer hacked together by three guys at an Arduino Music Visualize
 
 Below is the instructions and sample project this visualizer uses that was distributed for the Hackathon.
 
+To install follow instructions below then run the Portal_Visualizer.ino instead of HackathonSample.ino.
+
 <br>
 <hr>
 
