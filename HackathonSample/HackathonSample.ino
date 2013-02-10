@@ -65,12 +65,30 @@ void loop() {
   // Grab some audio and turn it into spectrum data!
   capture_and_process_audio();
 
-  uint8_t  x;
-  for(x=0; x < 32; x++) {
+  // This draws a classic spectrum-analyzer-type visualization (like Winamp or
+  // some car stereos). :)
+  int blue = display->Color333(0, 0, 255); // this is how to calculate an RGB color
+  for(int x=0; x < 32; x++) {
     float intensity = spectrum[x * 2] / 255.0;
     display->drawLine(x, 0, x, 15, 0);
-    display->drawLine(x, 15, x, 15 - (15 * intensity), 255);
+    display->drawLine(x, 15, x, 15 - (15 * intensity), blue);
   }
+
+  // Okay, now just draw some random stuff!
+
+  // Draw a circle at a random place and in a random color.
+  int x = random(0, 31); // The display's (x,y) coordinates go from (0,0) to (31,15)
+  int y = random(0, 15); // The display's (x,y) coordinates go from (0,0) to (31,15)
+  int radius = random(0, 5);
+  int random_color = display->Color333(random(0, 255), random(0, 255), random(0, 255));
+  display->drawCircle(x, y, radius, random_color);
+
+  // Draw a letter!
+  x = random(0, 31);
+  y = random(0, 15);
+  char letter = '*';
+  random_color = display->Color333(random(0, 255), random(0, 255), random(0, 255));
+  display->drawChar(x, y, letter, random_color, 0, 1);
 }
 
 
