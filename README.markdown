@@ -1,3 +1,12 @@
+# Arduino Portal Style Visualizer
+
+This is a visualizer hacked together by three guys at an Arduino Music Visualizer hackathon. Requires a 32x16 LED display.
+
+Below is the instructions and sample project this visualizer uses that was distributed for the Hackathon.
+
+<br>
+<hr>
+
 # How to install the HackathonSample visualizer
 
 These instructions are tricky, so we'll help you if you need it!
