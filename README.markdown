@@ -6,6 +6,9 @@ Below is the instructions and sample project this visualizer uses that was distr
 
 TO INSTALL: Follow instructions below then run the Portal_Visualizer.ino instead of HackathonSample.ino.
 
+
+<img src="http://www.likethemammal.com/images/github/PortalVisualizer.jpg" width="400" alt="Screenshot of visualizer" title="Screenshot"/>
+
 <br>
 <hr>
 
